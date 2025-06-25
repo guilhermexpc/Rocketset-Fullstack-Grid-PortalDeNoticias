@@ -2,10 +2,45 @@ main {
   margin-top: 16px;
 }
 
-#feature {
+#featured {
   img {
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
   }
 }
+
+  .featured-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden; /*Esconda o que passar do elemento*/
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      top: 50%;
+      background: linear-gradient(
+        180deg,
+        transparent 0%,
+        #020617 100%
+      );      
+    }
+  }
+
+  .featured-card-light {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden; /*Esconda o que passar do elemento*/
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      top: 50%;
+      background: linear-gradient(
+        180deg,
+        transparent 70%,
+        #020617 100%
+      );      
+    }
+  }
+
