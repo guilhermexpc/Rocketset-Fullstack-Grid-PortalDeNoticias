@@ -1,0 +1,9 @@
+/* Conceito de uma classe tem a responsabilidade de fazer apenas 1 função */
+
+.grid {
+  display: grid;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
+}
